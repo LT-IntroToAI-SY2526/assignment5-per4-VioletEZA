@@ -193,7 +193,7 @@ def DFS(state: Board) -> Board:
             return current_board
         row, col = current_board.find_most_constrained_cell()
         possible_values = current_board.rows[row][col]
-        print(row, col, possible_values)
+        #print(row, col, possible_values)
         if not current_board.failure_test():
             for val in possible_values:
                 new_board = copy.deepcopy(current_board)
